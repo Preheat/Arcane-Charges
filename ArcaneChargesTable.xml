@@ -1,0 +1,125 @@
+{
+    ["xOffset"] = -8.999267578125,
+    ["customText"] = "function()\n    local power = UnitPower(\"player\", SPELL_POWER_ARCANE_CHARGES, true);\n    if power > 3 then\n        return \"\"..power\n    elseif power > 2 then\n        return \"\"..power\n    elseif power > 1 then\n        return \"\"..power\n    elseif power > 0 then\n        return \"\"..power\n    end\n    \nend",
+    ["untrigger"] = {
+    },
+    ["anchorPoint"] = "CENTER",
+    ["customTextUpdate"] = "update",
+    ["icon"] = true,
+    ["fontFlags"] = "OUTLINE",
+    ["selfPoint"] = "CENTER",
+    ["trigger"] = {
+        ["custom_hide"] = "timed",
+        ["type"] = "status",
+        ["subeventSuffix"] = "_CAST_START",
+        ["unevent"] = "auto",
+        ["use_vehicle"] = false,
+        ["subeventPrefix"] = "SPELL",
+        ["event"] = "Conditions",
+        ["use_unit"] = true,
+        ["debuffType"] = "HELPFUL",
+        ["names"] = {
+        },
+        ["spellIds"] = {
+        },
+        ["unit"] = "player",
+        ["check"] = "update",
+        ["use_alive"] = true,
+        ["custom_type"] = "status",
+        ["use_mounted"] = false,
+    },
+    ["stickyDuration"] = false,
+    ["font"] = "Friz Quadrata TT",
+    ["height"] = 64,
+    ["load"] = {
+        ["talent"] = {
+            ["multi"] = {
+            },
+        },
+        ["spec"] = {
+            ["single"] = 1,
+            ["multi"] = {
+            },
+        },
+        ["difficulty"] = {
+            ["multi"] = {
+            },
+        },
+        ["role"] = {
+            ["multi"] = {
+            },
+        },
+        ["use_spec"] = true,
+        ["faction"] = {
+            ["multi"] = {
+            },
+        },
+        ["use_class"] = true,
+        ["race"] = {
+            ["multi"] = {
+            },
+        },
+        ["class"] = {
+            ["single"] = "MAGE",
+            ["multi"] = {
+            },
+        },
+        ["size"] = {
+            ["multi"] = {
+            },
+        },
+    },
+    ["fontSize"] = 42,
+    ["displayStacks"] = "%c",
+    ["regionType"] = "icon",
+    ["init_completed"] = 1,
+    ["disjunctive"] = "all",
+    ["color"] = {
+        [1] = 1,
+        [2] = 1,
+        [3] = 1,
+        [4] = 0,
+    },
+    ["stacksContainment"] = "INSIDE",
+    ["zoom"] = 0,
+    ["auto"] = true,
+    ["additional_triggers"] = {
+    },
+    ["id"] = "Arcane Charge Monitor - Preheat",
+    ["actions"] = {
+        ["start"] = {
+        },
+        ["finish"] = {
+        },
+        ["init"] = {
+        },
+    },
+    ["frameStrata"] = 1,
+    ["width"] = 64,
+    ["yOffset"] = 205.00042724609,
+    ["numTriggers"] = 1,
+    ["inverse"] = false,
+    ["animation"] = {
+        ["start"] = {
+            ["duration_type"] = "seconds",
+            ["type"] = "none",
+        },
+        ["main"] = {
+            ["duration_type"] = "seconds",
+            ["type"] = "none",
+        },
+        ["finish"] = {
+            ["duration_type"] = "seconds",
+            ["type"] = "none",
+        },
+    },
+    ["desaturate"] = false,
+    ["displayIcon"] = "Interface\\Icons\\Spell_Arcane_Arcane01",
+    ["stacksPoint"] = "BOTTOMRIGHT",
+    ["textColor"] = {
+        [1] = 1,
+        [2] = 1,
+        [3] = 1,
+        [4] = 1,
+    },
+}
